@@ -1,4 +1,3 @@
-
 # Generating Data - Lab
 
 ## Introduction
@@ -11,7 +10,7 @@ In this lab you will:
 - Generate datasets for classification problems
 - Generate datasets for regression problems
 
-## Generate data for classfication
+## Generate Data for Classfication
 
 Use `make_blobs()` to create a binary classification dataset with 100 samples, 2 features, and 2 centers (where each center corresponds to a different class label). Set `random_state = 42` for reproducibility.
 
@@ -32,9 +31,6 @@ _Hint: Your dataframe should have three columns in total, two for the features a
 ```
 
 Create a scatter plot of the data, while color-coding the different classes.
-
-_Hint: You may find this dictionary mapping class labels to colors useful: 
-`colors = {0: 'red', 1: 'blue'}`_
 
 
 ```python
@@ -57,12 +53,14 @@ What is the effect of changing `cluster_std` based on your plots?
 ```python
 # Your code here: 
 # cluster_std = 0.5
+
 ```
 
 
 ```python
 # Your code here: 
-# clusted_std = 2
+# cluster_std = 2
+
 ```
 
 
@@ -70,7 +68,7 @@ What is the effect of changing `cluster_std` based on your plots?
 # Your comments here
 ```
 
-## Generate data for regression
+## Generate Data for Regression
 
 Create a function `reg_simulation()` to run a regression simulation creating a number of datasets with the `make_regression()` data generation function. Perform the following tasks:
 
@@ -87,18 +85,18 @@ Create a function `reg_simulation()` to run a regression simulation creating a n
 ```python
 # Import necessary libraries
 
-
 def reg_simulation(n, random_state):
-    
     # Generate X and y
+    
+    # Fit a linear regression model to X, y
 
     # Use X,y to draw a scatter plot
-    # Fit a linear regression model to X , y and calculate r2
-    # label and plot the regression line 
+    
+    # Label and plot the regression line
     pass
 
 
-random_state = random_state = np.random.RandomState(42)
+random_state = 42
 
 for n in [10, 25, 40, 50, 100, 200]:
     reg_simulation(n, random_state)
